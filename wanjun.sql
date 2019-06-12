@@ -25,7 +25,7 @@ CHECK_EXPIRATION=OFF,
 CHECK_POLICY=OFF
 GO
 
----------------------------------------------（The fourth question）
+#######（The fourth question）#######
 
 CREATE USER [usr1] FOR LOGIN [junge]
 CREATE USER [usr2] FOR LOGIN [junge]
@@ -143,7 +143,7 @@ USE stdtb
 GO
 UPDATE Student SET Sage = Sage+1
 
----------------------------------------------（Question 10）
+#######（Question 10）#######
 
 USE stdtb
  GO
@@ -160,7 +160,8 @@ USE stdtb
         FROM Student
 GO
 
----------------------------------------------（Question 11）
+#######（Question 11）#######
+
 CREATE ROLE Teacher
 GRANT SELECT,UPDATE,INSERT
 ON Student
@@ -173,7 +174,7 @@ EXEC sp_addrolemember Teacher, 'usr2'
 EXEC sp_addrolemember Teacher, 'usr3'
 GO
 
----------------------------------------------（Question 12）
+#######（Question 12）#######
 
 CREATE TABLE TEACHER(Eno NUMERIC(4)PRIMARY KEY,
 Ename CHAR(10),
